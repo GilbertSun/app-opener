@@ -1,0 +1,24 @@
+{
+  "name": "app-opener",
+  "version": "0.0.1",
+  "description": "a simple library to open app from browser",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GilbertSun/app-opener.git"
+  },
+  "keywords": [
+    "deep-link",
+    "app",
+    "browser"
+  ],
+  "author": "GilbertSun <szb4321@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GilbertSun/app-opener/issues"
+  },
+  "homepage": "https://github.com/GilbertSun/app-opener"
+}
