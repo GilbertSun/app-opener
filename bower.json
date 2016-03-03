@@ -1,0 +1,22 @@
+{
+  "name": "AppOpener",
+  "main": "./dist/index.js",
+  "authors": [
+    "GilbertSun <szb4321@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GilbertSun/app-opener",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "demo",
+    "src",
+    "webpack.config.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
