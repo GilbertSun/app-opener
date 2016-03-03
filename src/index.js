@@ -45,17 +45,17 @@ let config = (option) => {
 }
 let openApp = (path, fallback) => {
     let intent = intentConvert(path, fallback);
-    //if (isWechat) {
+    if (isWechat) {
         if (isAndroid) {
             showOpenBrowserTip('android');
         } else if (isIOS) {
             showOpenBrowserTip('ios');
         }
-    /*} else if (isAndroid) {
+    } else if (isAndroid) {
         location.href = intent;
     } else if (isIOS) {
         location.href = path;
-    }*/
+    }
 }
 
 export {
