@@ -34,7 +34,7 @@ desc: 传入配置项,暂时只有下载地址
 
 ### `AppOpener.openApp`
 
-参数: (path{String}, fallback{Boolean}}): path 是要打开的地址,请询问 app 端, fallback 是控制是否自动去下载页
+参数: (path{String}, fallback{Boolean}): path 是要打开的地址,请询问 app 端, fallback 是控制是否自动去下载页
 
 ## demo
 
