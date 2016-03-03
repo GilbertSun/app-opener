@@ -1,7 +1,8 @@
 module.exports = {
     entry: './src/index',
     output: {
-        filename: './dist/index.js',
+        path: __dirname + '/dist',
+        filename: 'index.js',
         library: 'AppOpener',
         libraryTarget: 'umd'
     },
@@ -16,6 +17,9 @@ module.exports = {
             }, {
                 test: /\.less$/,
                 loader: 'style!css!less'
+            }, {
+                test: /\.png$/,
+                loader: 'url'
             }
         ]
     }

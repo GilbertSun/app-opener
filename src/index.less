@@ -1,3 +1,32 @@
-body {
-  background: red;
+.open-browser {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  opacity: 0.8;
+  z-index: 100;
+  .after() {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 300px;
+    content: '';
+  }
+  &.open-browser_android {
+    &:after {
+      .after();
+      background: transparent url("./img/android.png") no-repeat;
+      background-size: contain;
+    }
+  }
+  &.open-browser_ios {
+    &:after {
+      .after();
+      background: transparent url("./img/ios.png") no-repeat;
+      background-size: contain;
+    }
+  }
 }
+
