@@ -59,6 +59,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	__webpack_require__(1);
 
 	var DEFAULT_SETTING = {
@@ -68,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var isWechat = /MicroMessenger/.test(window.navigator.userAgent);
 	var isAndroid = /Android/.test(window.navigator.userAgent);
 	var isIOS = /iPad|iPhone|iPod/.test(window.navigator.userAgent);
-	var setting = Object.assign({}, DEFAULT_SETTING);
+	var setting = _extends({}, DEFAULT_SETTING);
 
 	/**
 	 * convert normal path to intent path
@@ -102,7 +105,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 	};
 	var config = function config(option) {
-	    setting = Object.assign({}, setting, option);
+	    setting = _extends({}, setting, option);
 	};
 	var openApp = function openApp(path, fallback) {
 	    var intent = intentConvert(path, fallback);
